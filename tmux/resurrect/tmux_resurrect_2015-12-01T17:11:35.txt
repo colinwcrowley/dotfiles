@@ -1,0 +1,7 @@
+pane	0	0	:hmm	0	:	0	:/Users/Colin/Desktop/CS49PythonHMM	1	nvim	:nvim
+pane	0	1	:review	1	:*	0	:/Users/Colin/Google Drive/Notes	1	nvim	:nvim cs-review
+pane	0	2	:~	0	:-	0	:/Users/Colin	1	zsh	:
+window	0	0	0	:	cafd,120x29,0,0,0
+window	0	1	1	:*	cb02,120x29,0,0,5
+window	0	2	0	:-	cb03,120x29,0,0,6
+state	0	

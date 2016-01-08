@@ -1,0 +1,3 @@
+pane	hack	0	:vim	1	:*	0	:/Users/Colin/Google Drive/LaTeX/ProbLab6	1	vim	:/usr/local/bin/vim ProbLab6.tex
+window	hack	0	1	:*	cdbd,158x38,0,0,0
+state	hack	

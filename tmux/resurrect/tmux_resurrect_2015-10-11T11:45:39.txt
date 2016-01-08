@@ -1,0 +1,28 @@
+pane	17	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	18	0	:zsh	1	:*	0	:/Users/Colin	1	zsh	:
+pane	19	0	:zsh	1	:*	0	:/Users/Colin	1	zsh	:
+pane	20	0	:zsh	1	:*	0	:/Users/Colin	1	zsh	:
+pane	21	0	:~	1	:*	0	:/Users/Colin	0	vim	:vim .vimrc
+pane	21	0	:~	1	:*	1	:/Users/Colin	1	zsh	:
+pane	22	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	23	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	4	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	5	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	6	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	7	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	8	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	base	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+window	17	0	1	:*	626a,80x19,0,0,78
+window	18	0	1	:*	626b,80x19,0,0,79
+window	19	0	1	:*	e262,80x19,0,0,80
+window	20	0	1	:*	e263,80x19,0,0,81
+window	21	0	1	:*	0286,181x48,0,0[181x24,0,0,82,181x23,0,25,83]
+window	22	0	1	:*	e6b6,181x48,0,0,84
+window	23	0	1	:*	e267,80x19,0,0,85
+window	4	0	1	:*	e266,80x19,0,0,65
+window	5	0	1	:*	e6b7,181x48,0,0,66
+window	6	0	1	:*	e268,80x19,0,0,67
+window	7	0	1	:*	dd99,110x25,0,0,68
+window	8	0	1	:*	e26a,80x19,0,0,69
+window	base	0	1	:*	b30e,120x29,0,0,107
+state	base	

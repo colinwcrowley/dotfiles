@@ -1,0 +1,8 @@
+pane	24	5	:vim	1	:*	0	:/Users/Colin	1	vim	:vim .tmux.conf
+pane	24	5	:vim	1	:*	1	:/Users/Colin	0	bash	:
+pane	base	0	:bash	1	:*	0	:/Users/Colin	1	bash	:
+pane	internships	0	:bash	1	:*	0	:/Users/Colin	1	bash	:
+window	24	5	1	:*	9702,181x45,0,0[181x35,0,0,29,181x9,0,36,36]
+window	base	0	1	:*	5769,80x23,0,0,39
+window	internships	0	1	:*	5768,80x23,0,0,38
+state	base	

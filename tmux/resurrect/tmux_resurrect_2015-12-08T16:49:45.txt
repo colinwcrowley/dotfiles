@@ -1,0 +1,3 @@
+pane	0	0	:span	1	:*	0	:/Users/Colin/Google Drive/LaTeX/spanish-final-essay	1	nvim	:nvim spessay.tex
+window	0	0	1	:*	cdc5,158x38,0,0,8
+state	0	

@@ -1,0 +1,3 @@
+pane	0	0	:..aTeX/ProbLab7	1	:*	0	:/Users/Colin/Google Drive/LaTeX/ProbLab7	1	zsh	:
+window	0	0	1	:*	cafd,120x29,0,0,0
+state	0	

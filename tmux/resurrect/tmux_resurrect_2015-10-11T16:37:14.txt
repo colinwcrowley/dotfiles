@@ -1,0 +1,4 @@
+pane	base	0	:vim	1	:*M	0	:/Users/Colin	1	vim	:/usr/local/bin/vim .tmux.conf
+pane	base	0	:vim	1	:*M	1	:/Users/Colin	0	zsh	:
+window	base	0	1	:*M	8f62,181x48,0,0{90x48,0,0,0,90x48,91,0,5}
+state	base	

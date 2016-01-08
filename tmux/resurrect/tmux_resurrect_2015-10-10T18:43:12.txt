@@ -1,0 +1,6 @@
+pane	base	0	:vim	1	:*	0	:/Users/Colin	1	vim	:vim .vimrc
+pane	base	0	:vim	1	:*	0	:/Users/Colin	1	vim	:vim .vimrc
+window	base	0	1	:*	cb03,128x28,0,0,6
+window	base	0	1	:*	cb03,128x28,0,0,6
+state	base	base
+state	base	base

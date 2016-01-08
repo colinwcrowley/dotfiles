@@ -1,0 +1,5 @@
+pane	0	0	:nvim	1	:*	0	:/Users/Colin/Desktop/CS49PythonHMM	1	nvim	:nvim analysis.tex
+pane	0	1	:~/.ssh	0	:-	0	:/Users/Colin/.ssh	1	zsh	:
+window	0	0	1	:*	cdbd,158x38,0,0,0
+window	0	1	0	:-	cdc1,158x38,0,0,4
+state	0	

@@ -1,0 +1,5 @@
+pane	0	0	:hmm	1	:*	0	:/Users/Colin/Desktop/CS49PythonHMM	1	nvim	:nvim
+pane	0	2	:~	0	:-	0	:/Users/Colin	1	zsh	:
+window	0	0	1	:*	cdbd,158x38,0,0,0
+window	0	2	0	:-	cdc3,158x38,0,0,6
+state	0	

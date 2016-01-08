@@ -1,0 +1,5 @@
+pane	0	0	:nvim	1	:*	0	:/Users/Colin	1	nvim	:nvim .config/nvim/init.vim
+pane	0	1	:~	0	:-	0	:/Users/Colin	1	zsh	:
+window	0	0	1	:*	b2bd,114x32,0,0,0
+window	0	1	0	:-	b2c0,114x32,0,0,3
+state	0	

@@ -1,0 +1,9 @@
+pane	cv	0	:..rive/LaTeX/CV	1	:*	0	:/Users/Colin/Google Drive/LaTeX/CV	1	zsh	:/usr/local/bin/vim
+pane	hack	0	:../base16-shell	0	:-	0	:/Users/Colin/.config/base16-shell	1	zsh	:
+pane	hack	1	:vim	1	:*	0	:/Users/Colin	1	vim	:/usr/local/bin/vim .vimrc
+pane	nnstyle	0	:../neural-style	1	:*M	0	:/Users/Colin/Desktop/neural-style	1	zsh	:
+window	cv	0	1	:*	65b8,120x29,0,0,19
+window	hack	0	0	:-	e5b4,120x29,0,0,25
+window	hack	1	1	:*	65b4,120x29,0,0,34
+window	nnstyle	0	1	:*M	cafd,120x29,0,0,0
+state	hack	

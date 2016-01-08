@@ -1,0 +1,5 @@
+pane	hack	0	:	1	:*	0	:/Users/Colin/Desktop/CS49PythonHMM	1	zsh	:
+pane	hack	1	:~	0	:-	0	:/Users/Colin	1	zsh	:
+window	hack	0	1	:*	cdbd,158x38,0,0,0
+window	hack	1	0	:-	cdc0,158x38,0,0,3
+state	hack	

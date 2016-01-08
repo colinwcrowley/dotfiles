@@ -1,0 +1,3 @@
+pane	0	0	:..CS49PythonHMM	1	:*	0	:/Users/Colin/Desktop/CS49PythonHMM	1	zsh	:
+window	0	0	1	:*	cafd,120x29,0,0,0
+state	0	

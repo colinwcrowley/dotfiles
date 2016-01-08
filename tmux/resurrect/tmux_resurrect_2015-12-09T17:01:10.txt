@@ -1,0 +1,3 @@
+pane	0	0	:nvim	1	:*	0	:/Users/Colin	1	nvim	:nvim /Users/Colin/.config/nvim/init.vim
+window	0	0	1	:*	cdc5,158x38,0,0,8
+state	0	

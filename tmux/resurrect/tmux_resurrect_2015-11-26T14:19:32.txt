@@ -1,0 +1,5 @@
+pane	hack	0	:nvim	1	:*	0	:/Users/Colin/Desktop/CS49PythonHMM	1	nvim	:nvim hmm.py
+pane	hack	1	:~	0	:-	0	:/Users/Colin	1	zsh	:
+window	hack	0	1	:*	cafd,120x29,0,0,0
+window	hack	1	0	:-	cb00,120x29,0,0,3
+state	hack	

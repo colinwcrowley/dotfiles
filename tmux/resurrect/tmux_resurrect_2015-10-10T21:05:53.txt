@@ -1,0 +1,5 @@
+pane	base	0	:vim	1	:*	0	:/Users/Colin	1	vim	:vim .tmux.conf
+pane	intern	0	:bash	1	:*	0	:/Users/Colin	1	bash	:
+window	base	0	1	:*	66b5,181x48,0,0,35
+window	intern	0	1	:*	e6b3,181x48,0,0,43
+state	base	

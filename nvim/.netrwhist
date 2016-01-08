@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/Colin/Google Drive/cs/WordNumberMap'
+let g:netrw_dirhist_2='/Users/Colin/Google Drive/LaTeX/ProbLab5'
+let g:netrw_dirhist_3='/Users/Colin/Google Drive/cs/FindSquare'
+let g:netrw_dirhist_4='/Users/Colin/Desktop/CS49PythonHMM'
+let g:netrw_dirhist_5='/Users/Colin/Desktop/TreeAnagrams'
+let g:netrw_dirhist_6='/Users/Colin/Google Drive/Notes'
+let g:netrw_dirhist_7='/Users/Colin/Desktop/TreeAnagrams'
+let g:netrw_dirhist_8='/Users/Colin/Downloads/Markdown-to-HTML.workflow'
+let g:netrw_dirhist_9='/Users/Colin/blog/blog_src/gaym'

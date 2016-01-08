@@ -1,0 +1,3 @@
+pane	0	0	:nvim	1	:*	0	:/Users/Colin/Google Drive/LaTeX/ProbLab7	1	nvim	:nvim lab.tex
+window	0	0	1	:*	b2bd,114x32,0,0,0
+state	0	

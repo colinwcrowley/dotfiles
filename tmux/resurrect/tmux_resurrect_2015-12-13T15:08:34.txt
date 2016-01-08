@@ -1,0 +1,3 @@
+pane	0	0	:nvim	1	:*	0	:/Users/Colin/Google Drive/LaTeX/SemanticsHW11	1	nvim	:nvim presuppostions.tex notes
+window	0	0	1	:*	cdbd,158x38,0,0,0
+state	0	

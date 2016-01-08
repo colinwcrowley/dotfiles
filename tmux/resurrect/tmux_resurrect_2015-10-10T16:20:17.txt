@@ -1,0 +1,5 @@
+pane	base	0	:bash	1	:*	0	:/Users/Colin	1	bash	:
+pane	intern	0	:bash	1	:*	0	:/Users/Colin	1	bash	:
+window	base	0	1	:*	d763,80x23,0,0,43
+window	intern	0	1	:*	60b8,181x45,0,0,38
+state	base	

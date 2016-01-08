@@ -1,0 +1,9 @@
+pane	base	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	hack	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	nnstyle	0	:../neural-style	1	:*M	0	:/Users/Colin/Desktop/neural-style	1	zsh	:
+pane	tex	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+window	base	0	1	:*	f30d,120x29,0,0,415
+window	hack	0	1	:*	730a,120x29,0,0,231
+window	nnstyle	0	1	:*M	c21d,59x27,0,0,0
+window	tex	0	1	:*	7311,120x29,0,0,409
+state	base	

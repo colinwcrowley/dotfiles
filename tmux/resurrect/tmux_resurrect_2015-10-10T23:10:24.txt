@@ -1,0 +1,76 @@
+pane	10	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	10	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	11	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	11	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	12	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	12	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	13	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	13	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	14	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	14	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	15	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	15	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	16	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	16	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	17	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	17	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	18	0	:zsh	1	:*	0	:/Users/Colin	1	zsh	:
+pane	18	0	:zsh	1	:*	0	:/Users/Colin	1	zsh	:
+pane	19	0	:zsh	1	:*	0	:/Users/Colin	1	zsh	:
+pane	19	0	:zsh	1	:*	0	:/Users/Colin	1	zsh	:
+pane	4	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	4	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	5	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	5	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	6	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	6	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	7	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	7	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	8	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	8	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	9	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	9	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+pane	base	0	:vim	0	:-	0	:/Users/Colin	1	vim	:zsh
+pane	base	0	:vim	0	:-	0	:/Users/Colin	1	vim	:zsh
+pane	base	0	:vim	0	:-	1	:/Users/Colin	0	zsh	:
+pane	base	0	:vim	0	:-	1	:/Users/Colin	0	zsh	:
+pane	base	1	:vim	1	:*	0	:/Users/Colin	1	vim	:vim .tmux.conf
+pane	base	1	:vim	1	:*	0	:/Users/Colin	1	vim	:vim .tmux.conf
+window	10	0	1	:*	6263,80x19,0,0,71
+window	11	0	1	:*	6264,80x19,0,0,72
+window	12	0	1	:*	6265,80x19,0,0,73
+window	13	0	1	:*	6266,80x19,0,0,74
+window	14	0	1	:*	6267,80x19,0,0,75
+window	15	0	1	:*	6268,80x19,0,0,76
+window	16	0	1	:*	6269,80x19,0,0,77
+window	17	0	1	:*	626a,80x19,0,0,78
+window	18	0	1	:*	626b,80x19,0,0,79
+window	19	0	1	:*	e262,80x19,0,0,80
+window	4	0	1	:*	e266,80x19,0,0,65
+window	5	0	1	:*	e267,80x19,0,0,66
+window	6	0	1	:*	e268,80x19,0,0,67
+window	7	0	1	:*	e269,80x19,0,0,68
+window	8	0	1	:*	e26a,80x19,0,0,69
+window	9	0	1	:*	6262,80x19,0,0,70
+window	10	0	1	:*	6263,80x19,0,0,71
+window	base	0	0	:-	7335,80x19,0,0[80x15,0,0,48,80x3,0,16,63]
+window	11	0	1	:*	6264,80x19,0,0,72
+window	base	1	1	:*	e265,80x19,0,0,64
+window	12	0	1	:*	6265,80x19,0,0,73
+window	13	0	1	:*	6266,80x19,0,0,74
+window	14	0	1	:*	6267,80x19,0,0,75
+window	15	0	1	:*	6268,80x19,0,0,76
+window	16	0	1	:*	6269,80x19,0,0,77
+window	17	0	1	:*	626a,80x19,0,0,78
+window	18	0	1	:*	626b,80x19,0,0,79
+window	19	0	1	:*	e262,80x19,0,0,80
+window	4	0	1	:*	e266,80x19,0,0,65
+window	5	0	1	:*	e267,80x19,0,0,66
+window	6	0	1	:*	e268,80x19,0,0,67
+window	7	0	1	:*	e269,80x19,0,0,68
+window	8	0	1	:*	e26a,80x19,0,0,69
+window	9	0	1	:*	6262,80x19,0,0,70
+window	base	0	0	:-	7335,80x19,0,0[80x15,0,0,48,80x3,0,16,63]
+window	base	1	1	:*	e265,80x19,0,0,64
+state	base	
+state	base	

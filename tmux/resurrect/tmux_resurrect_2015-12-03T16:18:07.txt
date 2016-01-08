@@ -1,0 +1,3 @@
+pane	0	0	:nvim	1	:*	0	:/Users/Colin/Downloads/sample-paper	1	nvim	:nvim template.tex
+window	0	0	1	:*	cafd,120x29,0,0,0
+state	0	

@@ -1,0 +1,14 @@
+pane	hack	0	:~	1	:*	0	:/Users/Colin	1	vim	:/usr/local/bin/vim .tmux.conf
+pane	hack	0	:~	1	:*	1	:/Users/Colin	0	zsh	:
+pane	hack	1	:~	0	:-	0	:/Users/Colin	1	zsh	:
+pane	intern	0	:companies	1	:*	0	:/Users/Colin/Google Drive/Intership15	1	vim	:/usr/local/bin/vim companies.md
+pane	intern	1	:resume	0	:-	0	:/Users/Colin/Google Drive/LaTeX/CV	1	vim	:/usr/local/bin/vim colincv.tex
+pane	nnstyle	0	:../neural-style	1	:*M	0	:/Users/Colin/Desktop/neural-style	1	zsh	:
+pane	tex	0	:..iscrete_Paper	1	:*	0	:/Users/Colin/Google Drive/LaTeX/Discrete_Paper	1	zsh	:
+window	hack	0	1	:*	5ec0,120x29,0,0{60x29,0,0,433,59x29,61,0,449}
+window	hack	1	0	:-	7311,120x29,0,0,447
+window	intern	0	1	:*	730f,120x29,0,0,426
+window	intern	1	0	:-	f309,120x29,0,0,430
+window	nnstyle	0	1	:*M	cafd,120x29,0,0,0
+window	tex	0	1	:*	7311,120x29,0,0,409
+state	hack	

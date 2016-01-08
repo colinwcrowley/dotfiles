@@ -1,0 +1,9 @@
+pane	hack	0	:nvim	1	:*	0	:/Users/Colin	1	nvim	:nvim .tmux-status-line
+pane	hack	1	:color	0	:	0	:/Users/Colin	1	zsh	:
+pane	hack	2	:~/Desktop	0	:-	0	:/Users/Colin/Desktop	1	zsh	:
+pane	other	0	:~	1	:*	0	:/Users/Colin	1	zsh	:
+window	hack	0	1	:*	cdbd,158x38,0,0,0
+window	hack	1	0	:	cdbe,158x38,0,0,1
+window	hack	2	0	:-	cdc1,158x38,0,0,4
+window	other	0	1	:*	cdc2,158x38,0,0,5
+state	hack	other

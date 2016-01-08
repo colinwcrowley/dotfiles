@@ -1,0 +1,6 @@
+pane	base	0	:vim	1	:*	0	:/Users/Colin	1	vim	:vim .vimrc
+pane	base	0	:vim	1	:*	1	:/Users/Colin	0	bash	:
+pane	base	1	:bash	0	:-	0	:/Users/Colin	1	bash	:
+window	base	0	1	:*	8283,181x48,0,0[181x24,0,0,21,181x23,0,25,29]
+window	base	1	0	:-	e6b7,181x48,0,0,28
+state	base	
