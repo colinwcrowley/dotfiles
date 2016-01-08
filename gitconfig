@@ -1,0 +1,13 @@
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[user]
+	name = Colin Crowley
+	email = colinwcrowley@me.com
+[alias]
+    wdiff = diff --color-words --ignore-all-space
+    ldiff = difftool -y -t latex
+
+[difftool.latex]
+    cmd = latexdiff "$LOCAL" "$REMOTE"
