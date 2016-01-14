@@ -31,9 +31,9 @@ nnoremap <leader>gp :<C-u>Git push<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q ZZ<CR>
 
-nnoremap <silent> <Plug>SpellCorrect1 1z=
-      \ :call repeat#set("\<Plug>SpellCorrect1")<CR>
-nmap <silent> Q <Plug>SpellCorrect1
+"nnoremap <silent> <Plug>SpellCorrect1 1z=
+      "\ :call repeat#set("\<Plug>SpellCorrect1")<CR>
+"nmap <silent> Q <Plug>SpellCorrect1
 
 
 "EasyMotion rebinding
@@ -53,9 +53,8 @@ nnoremap : ;
 nnoremap \ g;
 nnoremap <silent> Q @q
 nnoremap <silent> <CR> :<C-U>wa<CR>:<C-U>!!<CR>
-"Temporary
-nnoremap <silent> <Esc> :noh<CR>
-"nnoremap <C-h> <C-w-h>
+""Temporary
+"nnoremap <silent> <Esc> :noh<CR>
 
 nnoremap <silent> <leader><CR> :<C-u>noh<CR>
 
@@ -91,9 +90,6 @@ set breakindent
 set formatprg=par\ -w72
 set formatoptions+=w
 set tw=72
-
-autocmd InsertEnter * set cul
-autocmd InsertLeave * set nocul
 
 set clipboard=unnamed
 set undolevels=1000000
@@ -154,5 +150,5 @@ Plug 'panozzaj/vim-autocorrect'
 Plug 'rking/ag.vim'
 "Plug 'sjl/gundo.vim'
 Plug 'suan/vim-instant-markdown', { 'for': 'markdown'}
-let g:instant_markdown_autostart = 0
+"let g:instant_markdown_autostart = 0
 call plug#end()
