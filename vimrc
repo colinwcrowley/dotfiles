@@ -82,7 +82,7 @@ let g:surround_101 = "\\emph\{\r\}"
 
 set tabstop=8
 set expandtab
-set shiftwidth=2
+set shiftwidth=4
 set smarttab autoindent
 set backspace=eol,indent,start
 "set mouse=

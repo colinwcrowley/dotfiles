@@ -5,6 +5,7 @@
 [user]
 	name = Colin Crowley
 	email = colinwcrowley@me.com
+	push = simple
 [alias]
     wdiff = diff --color-words --ignore-all-space
     ldiff = difftool -y -t latex
