@@ -25,6 +25,7 @@ nnoremap <silent> <leader>gc :<C-u>Gcommit<CR>
 nnoremap <leader>gb :<C-u>Git branch<Space>
 nnoremap <leader>go :<C-u>Git checkout<Space>
 nnoremap <leader>ga :<C-u>Git add<Space>
+nnoremap <silent> <leader>gA :<C-u>Git add -A<CR>
 nnoremap <leader>gp :<C-u>Git push<CR>
 
 
@@ -43,9 +44,11 @@ map <Leader>e <Plug>(easymotion-prefix)
 "nnoremap + <C-w>+
 "nnoremap - <C-w>-
 
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+"nnoremap <C-j> <C-w>j
+"nnoremap <C-k> <C-w>k
+"nnoremap <C-l> <C-w>l
+"
+nnoremap <silent> <C-l> :noh<CR>
 
 nnoremap Y y$
 nnoremap ; :
@@ -81,6 +84,7 @@ set tabstop=8
 set expandtab
 set shiftwidth=2
 set smarttab autoindent
+set backspace=eol,indent,start
 "set mouse=
 
 set laststatus=2
@@ -150,5 +154,5 @@ Plug 'panozzaj/vim-autocorrect'
 Plug 'rking/ag.vim'
 "Plug 'sjl/gundo.vim'
 Plug 'suan/vim-instant-markdown', { 'for': 'markdown'}
-"let g:instant_markdown_autostart = 0
+let g:instant_markdown_autostart = 0
 call plug#end()
