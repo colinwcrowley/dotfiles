@@ -1,6 +1,5 @@
 set syntax=on
 set number
-set relativenumber
 
 set background=dark
 colorscheme base16-default
@@ -90,7 +89,7 @@ set backspace=eol,indent,start
 set laststatus=2
 
 set wrap nolist linebreak
-set breakindent
+"set breakindent
 set formatprg=par\ -w72
 set formatoptions+=w
 set tw=72
