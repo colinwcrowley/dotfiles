@@ -1,6 +1,5 @@
 set syntax=on
 set number
-set relativenumber
 
 set background=dark
 colorscheme base16-default
@@ -33,8 +32,11 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>q ZZ<CR>
 
 "nnoremap <silent> <Plug>SpellCorrect1 1z=
-      "\ :call repeat#set("\<Plug>SpellCorrect1")<CR>
-"nmap <silent> Q <Plug>SpellCorrect1
+"      \ :call repeat#set("\<Plug>SpellCorrect1")<CR>
+"    UGG! not working
+"nnoremap  <TAB> <Plug>SpellCorrect1
+nnoremap <TAB> 1z=
+
 
 
 "EasyMotion rebinding
@@ -53,7 +55,6 @@ nnoremap <silent> <C-l> :noh<CR>
 nnoremap Y y$
 nnoremap ; :
 nnoremap : ;
-nnoremap \ g;
 nnoremap <silent> Q @q
 nnoremap <silent> <CR> :<C-U>wa<CR>:<C-U>!!<CR>
 ""Temporary

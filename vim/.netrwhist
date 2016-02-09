@@ -1,8 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Users/Colin/Library/Application Support/Google/Chrome/Profile 1/Extensions'
 let g:netrw_dirhist_2='/Users/Colin/Library/Application Support/Google/Chrome/Profile 1/Extensions/aapocclcgogkmnckokdopfmhonfmgoek'
 let g:netrw_dirhist_3='/Users/Colin/Library/Application Support/Google/Chrome/Profile 1/Extensions/aapocclcgogkmnckokdopfmhonfmgoek/0.9_0'
 let g:netrw_dirhist_4='/Users/Colin/Library/Application Support/Google/Chrome/Profile 1/Extensions/pdiebiamhaleloakpcgmpnenggpjbcbm'
 let g:netrw_dirhist_5='/Users/Colin/Library/Application Support/Google/Chrome/Profile 1/Extensions/pdiebiamhaleloakpcgmpnenggpjbcbm/0.8.5_0'
 let g:netrw_dirhist_6='/Users/Colin/Library/Application Support/Google/Chrome/Profile 1/Extensions/pdiebiamhaleloakpcgmpnenggpjbcbm/0.8.5_0/js'
+let g:netrw_dirhist_7='/Users/Colin'
+let g:netrw_dirhist_8='/Users/Colin/Google Drive'
