@@ -78,6 +78,8 @@ fun! <SID>TrimEndLines()
 endfun
 autocmd BufWritePre * :call <SID>TrimEndLines()
 
+autocmd! bufwritepost .vimrc source %
+
 let g:surround_76 = "\\\1command: \1\{\r\}"
 let g:surround_101 = "\\emph\{\r\}"
 

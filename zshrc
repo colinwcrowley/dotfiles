@@ -1,18 +1,13 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/Colin/.oh-my-zsh
 
-alias vim='/usr/local/bin/vim'
-alias v='/usr/local/bin/vim'
-alias vrc='v ~/.vimrc'
-alias zrc='v ~/.zshrc'
-alias tm='tmux new-session -A -s base'
 alias math='/Applications/Mathematica.app/Contents/MacOS/MathKernel'
 
-alias newt='sh ~/scripts/newtex.sh'
-alias opnt='sh ~/scripts/opentex.sh'
-
 export EDITOR="nvim"
-export VISUAL="/usr/local/bin/vim"
+export VISUAL="nvim"
+
+alias n="nvim"
+alias v="vim"
 
 KEYTIMEOUT=1
 
