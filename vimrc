@@ -134,6 +134,7 @@ Plug 'thinca/vim-guicolorscheme'
 
 Plug 'bps/vim-textobj-python', { 'for': 'python'}
 Plug 'rbonvall/vim-textobj-latex', { 'for': 'tex'}
+Plug 'tpope/vim-fireplace', {'for': 'clojure'}
 
 "Plug 'Valloric/YouCompleteMe', { 'for': 'python' }
 "autocmd! User YouCompleteMe call youcompleteme#Enable()
@@ -150,7 +151,8 @@ Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-unimpaired'
 Plug 'xuhdev/vim-latex-live-preview'
 Plug 'tpope/vim-repeat'
-Plug 'scrooloose/nerdcommenter'
+" Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'bronson/vim-visual-star-search'
 Plug 'panozzaj/vim-autocorrect'
