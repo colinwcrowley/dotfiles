@@ -14,7 +14,6 @@ nnoremap <silent> <leader>sj :<C-u>belowright sp<CR>
 nnoremap <silent> <leader>sk :<C-u>sp<CR>
 nnoremap <silent> <leader>sl :<C-u>belowright vsp<CR>
 nnoremap <silent> <leader>sh :<C-u>vsp<CR>
-nnoremap <silent> <leader>n :<C-u>NERDTreeToggle<CR>
 nnoremap <silent> <leader>mm :<C-u>make<CR>
 nnoremap <silent> <leader>lc :<C-u>! texcount '%'<CR>
 
@@ -142,7 +141,6 @@ Plug 'tpope/vim-fireplace', {'for': 'clojure'}
 Plug 'SirVer/ultisnips'
 Plug 'bling/vim-airline'
 Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'unblevable/quick-scope'
 Plug 'kien/ctrlp.vim'
 Plug 'benekastah/neomake'
@@ -152,6 +150,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'xuhdev/vim-latex-live-preview'
 Plug 'tpope/vim-repeat'
 " Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'bronson/vim-visual-star-search'
