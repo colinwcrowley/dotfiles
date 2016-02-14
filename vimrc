@@ -1,6 +1,7 @@
 " ======================================================================
 " BASICS {{{
 " ======================================================================
+
 set syntax=on
 set noshowmode
 set number
@@ -19,24 +20,29 @@ set clipboard=unnamed
 set undolevels=10000
 set history=10000
 set incsearch hlsearch
+
 " ======================================================================
 " }}}
 " ======================================================================
 " ======================================================================
 " APPEARANCE {{{
 " ======================================================================
+
 colorscheme base16-default
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_section_x = ''
 let g:airline_section_y = ''
 let g:airline_section_z = ''
+
 " ======================================================================
 " }}}
 " ======================================================================
 " ======================================================================
 " MAPPINGS {{{
 " ======================================================================
+"
+"
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
@@ -63,10 +69,10 @@ nnoremap <C-y> <C-y><C-y>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q ZZ<CR>
 nnoremap <Tab> <C-w>w
-nnoremap <c-c>j <c-w>j<c-w>c<c-w>k
-nnoremap <c-c>k <c-w>k<c-w>c<c-w>j
-nnoremap <c-c>l <c-w>l<c-w>c<c-w>h
-nnoremap <c-c>h <c-w>h<c-w>c<c-w>l
+nnoremap <C-c>j <c-w>j<c-w>c<c-w>k
+nnoremap <C-c>k <c-w>k<c-w>c<c-w>j
+nnoremap <C-c>l <c-w>l<c-w>c<c-w>h
+nnoremap <C-c>h <c-w>h<c-w>c<c-w>l
 "nnoremap <silent> <Plug>SpellCorrect1 1z=
 "      \ :call repeat#set("\<Plug>SpellCorrect1")<CR>
 "    UGG! not working
@@ -95,12 +101,14 @@ function! s:goog(pat, lucky)
 endfunction
 nnoremap <leader>? :call <SID>goog(expand("<cWORD>"), 0)<cr>
 nnoremap <leader>! :call <SID>goog(expand("<cWORD>"), 1)<cr>
+
 " ======================================================================
 " }}}
 " ======================================================================
 " ======================================================================
 " WHITESPACE {{{
 " ======================================================================
+
 fun! <SID>StripTrailingWhitespaces()
     let l = line(".")
     let c = col(".")
@@ -115,12 +123,14 @@ fun! <SID>TrimEndLines()
 endfun
 autocmd BufWritePre * :call <SID>TrimEndLines()
 autocmd! bufwritepost .vimrc source %
+
 " ======================================================================
 " }}}
 " ======================================================================
 " ======================================================================
 " PLUGINS {{{
 " ======================================================================
+
 call plug#begin('~/dotfiles/vim/plug')
 Plug 'junegunn/vim-plug'
 Plug 'kana/vim-textobj-user'
@@ -135,6 +145,9 @@ Plug 'benekastah/neomake'
 Plug 'tommcdo/vim-exchange'
 Plug 'easymotion/vim-easymotion'
 Plug 'xuhdev/vim-latex-live-preview'
+Plug 'tpope/vim-capslock'
+Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
@@ -165,6 +178,7 @@ sign define neomake_msg texthl=SignColumn
 let g:neomake_verbose=0
 
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
 " ======================================================================
 " }}}
 " ======================================================================
