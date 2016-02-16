@@ -49,6 +49,8 @@ inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 vnoremap < <gv
 vnoremap > >gv
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 let mapleader = " "
 nnoremap <silent> <leader>sj :<C-u>belowright sp<CR>
 nnoremap <silent> <leader>sk :<C-u>sp<CR>
@@ -68,6 +70,7 @@ nnoremap <C-e> <C-e><C-e>
 nnoremap <C-y> <C-y><C-y>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q ZZ<CR>
+nnoremap <leader>p a<Space><Esc>p
 nnoremap <Tab> <C-w>w
 nnoremap <C-c>j <c-w>j<c-w>c<c-w>k
 nnoremap <C-c>k <c-w>k<c-w>c<c-w>j
@@ -133,6 +136,12 @@ autocmd! bufwritepost .vimrc source %
 
 call plug#begin('~/dotfiles/vim/plug')
 Plug 'junegunn/vim-plug'
+Plug 'junegunn/goyo.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/rainbow_parentheses.vim'
+Plug 'junegunn/limelight.vim'
+Plug 'mattn/gist-vim'
+Plug 'mattn/webapi-vim'
 Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-line'
 Plug 'godlygeek/csapprox'
@@ -165,7 +174,21 @@ Plug 'tpope/vim-fireplace', {'for': 'clojure'}
 Plug 'suan/vim-instant-markdown', { 'for': 'markdown'}
 call plug#end()
 
+function! s:map_change_option(...)
+  let [key, opt] = a:000[0:1]
+  let op = get(a:, 3, 'set '.opt.'!')
+  execute printf("nnoremap co%s :%s<bar>echo '%s: '. &%s<cr>",
+        \ key, op, opt, opt)
+endfunction
+
+call s:map_change_option('m', 'mouse', 'let &mouse = &mouse == "" ? "a" : ""')
+call s:map_change_option('t', 'textwidth',
+    \ 'let &textwidth = input("textwidth (". &textwidth ."): ")<bar>redraw')
+nnoremap cog :Goyo<CR>
+nnoremap cop :RainbowParentheses!!<CR>
+
 let g:instant_markdown_autostart = 0
+let g:limelight_conceal_ctermfg = 'gray'
 
 let g:surround_76 = "\\\1command: \1\{\r\}"
 let g:surround_101 = "\\emph\{\r\}"
