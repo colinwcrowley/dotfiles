@@ -20,6 +20,7 @@ set clipboard=unnamed
 set undolevels=10000
 set history=10000
 set incsearch hlsearch
+autocmd InsertEnter,InsertLeave * set cul!
 
 " ======================================================================
 " }}}
