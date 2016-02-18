@@ -2,6 +2,7 @@
 " BASICS {{{
 " ======================================================================
 
+set expandtab smarttab autoindent
 set syntax=on
 set noshowmode
 set number
@@ -53,30 +54,29 @@ vnoremap > >gv
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 let mapleader = " "
-nnoremap <silent> <leader>sj :<C-u>belowright sp<CR>
-nnoremap <silent> <leader>sk :<C-u>sp<CR>
-nnoremap <silent> <leader>sl :<C-u>belowright vsp<CR>
-nnoremap <silent> <leader>sh :<C-u>vsp<CR>
-nnoremap <silent> <leader>mm :<C-u>make<CR>
-nnoremap <silent> <leader>lc :<C-u>! texcount '%'<CR>
-nnoremap <silent> <leader>gs :<C-u>Gstatus<CR>
-nnoremap <silent> <leader>gm :<C-u>Gmove<Space>
-nnoremap <silent> <leader>gc :<C-u>Gcommit<CR>
-nnoremap <leader>gb :<C-u>Git branch<Space>
-nnoremap <leader>go :<C-u>Git checkout<Space>
-nnoremap <leader>ga :<C-u>Git add<Space>
-nnoremap <silent> <leader>gA :<C-u>Git add -A<CR>
-nnoremap <leader>gp :<C-u>Git push<CR>
+nnoremap <leader>s :sh<CR>
+nnoremap <silent> <leader>mm :make<CR>
+nnoremap <silent> <leader>lc :! texcount '%'<CR>
+nnoremap <silent> <leader>gs :Gstatus<CR>
+nnoremap <silent> <leader>gm :Gmove<Space>
+nnoremap <silent> <leader>gc :Gcommit<CR>
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>go :Git checkout<Space>
+nnoremap <leader>ga :Git add<Space>
+nnoremap <leader>gd :Gdiff<CR>
+nnoremap <silent> <leader>gA :Git add -A<CR>
+nnoremap <leader>gp :Git push<CR>
 nnoremap <C-e> <C-e><C-e>
 nnoremap <C-y> <C-y><C-y>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q ZZ<CR>
 nnoremap <leader>p a<Space><Esc>p
+nnoremap <leader>v :vsp ~/.vimrc<CR>
 nnoremap <Tab> <C-w>w
-nnoremap <C-c>j <c-w>j<c-w>c<c-w>k
-nnoremap <C-c>k <c-w>k<c-w>c<c-w>j
-nnoremap <C-c>l <c-w>l<c-w>c<c-w>h
-nnoremap <C-c>h <c-w>h<c-w>c<c-w>l
+" nnoremap <C-c>j <c-w>j<c-w>c<c-w>k
+" nnoremap <C-c>k <c-w>k<c-w>c<c-w>j
+" nnoremap <C-c>l <c-w>l<c-w>c<c-w>h
+" nnoremap <C-c>h <c-w>h<c-w>c<c-w>l
 "nnoremap <silent> <Plug>SpellCorrect1 1z=
 "      \ :call repeat#set("\<Plug>SpellCorrect1")<CR>
 "    UGG! not working
@@ -90,6 +90,8 @@ nnoremap ; :
 nnoremap : ;
 nnoremap <silent> Q @q
 nnoremap <silent> <CR> :<C-U>wa<CR>:<C-U>!!<CR>
+nnoremap <silent> <BS> :close<CR>
+nnoremap <C-s> :echo "ahhh"<CR>
 nnoremap gV `]v`[
 if has('nvim')
     autocmd BufWinEnter,WinEnter term://* startinsert
@@ -155,6 +157,7 @@ Plug 'benekastah/neomake'
 Plug 'tommcdo/vim-exchange'
 Plug 'easymotion/vim-easymotion'
 Plug 'xuhdev/vim-latex-live-preview'
+Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-capslock'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-abolish'

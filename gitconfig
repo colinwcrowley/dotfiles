@@ -14,3 +14,5 @@
     cmd = latexdiff "$LOCAL" "$REMOTE"
 [github]
 	user = colinwcrowley
+[push]
+	default = simple
