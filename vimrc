@@ -71,7 +71,7 @@ nnoremap <C-y> <C-y><C-y>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q ZZ<CR>
 nnoremap <leader>p a<Space><Esc>p
-nnoremap <leader>v :vsp ~/.vimrc<CR>
+nnoremap <leader>v :vsp ~/dotfiles/vimrc<CR>
 nnoremap <Tab> <C-w>w
 " nnoremap <C-c>j <c-w>j<c-w>c<c-w>k
 " nnoremap <C-c>k <c-w>k<c-w>c<c-w>j
