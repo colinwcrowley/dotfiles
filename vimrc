@@ -21,6 +21,7 @@ set clipboard=unnamed
 set undolevels=10000
 set history=10000
 set incsearch hlsearch
+set statusline=\ %F\ %=\ %{exists('g:loaded_fugitive')?fugitive#statusline():''}
 autocmd InsertEnter,InsertLeave * set cul!
 
 " ======================================================================
@@ -129,6 +130,7 @@ fun! <SID>TrimEndLines()
 endfun
 autocmd BufWritePre * :call <SID>TrimEndLines()
 autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost ~/dotfiles/vimrc source %
 
 " ======================================================================
 " }}}
@@ -150,7 +152,7 @@ Plug 'kana/vim-textobj-line'
 Plug 'godlygeek/csapprox'
 Plug 'flazz/vim-colorschemes'
 Plug 'SirVer/ultisnips'
-Plug 'bling/vim-airline'
+" Plug 'bling/vim-airline'
 Plug 'unblevable/quick-scope'
 Plug 'kien/ctrlp.vim'
 Plug 'benekastah/neomake'
