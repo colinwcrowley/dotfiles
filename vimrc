@@ -3,6 +3,7 @@
 " ======================================================================
 
 set expandtab smarttab autoindent
+set noswapfile
 set syntax=on
 set noshowmode
 set number
@@ -20,8 +21,9 @@ set tw=72
 set clipboard=unnamed
 set undolevels=10000
 set history=10000
-set incsearch hlsearch
+set incsearch
 set statusline=\ %F\ %=\ %{exists('g:loaded_fugitive')?fugitive#statusline():''}
+let NERDTreeHijackNetrw=0
 autocmd InsertEnter,InsertLeave * set cul!
 
 " ======================================================================
@@ -46,6 +48,7 @@ let g:airline_section_z = ''
 " ======================================================================
 "
 "
+inoremap jj <Esc>
 inoremap <C-h> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
@@ -70,10 +73,11 @@ nnoremap <leader>gp :Git push<CR>
 nnoremap <C-e> <C-e><C-e>
 nnoremap <C-y> <C-y><C-y>
 nnoremap <leader>w :w<CR>
-nnoremap <leader>q ZZ<CR>
 nnoremap <leader>p a<Space><Esc>p
 nnoremap <leader>v :vsp ~/dotfiles/vimrc<CR>
 nnoremap <Tab> <C-w>w
+nnoremap <F7> ggg?G``
+
 " nnoremap <C-c>j <c-w>j<c-w>c<c-w>k
 " nnoremap <C-c>k <c-w>k<c-w>c<c-w>j
 " nnoremap <C-c>l <c-w>l<c-w>c<c-w>h
@@ -82,6 +86,7 @@ nnoremap <Tab> <C-w>w
 "      \ :call repeat#set("\<Plug>SpellCorrect1")<CR>
 "    UGG! not working
 "nnoremap  <TAB> <Plug>SpellCorrect1
+"true
 nnoremap <S-Tab> 1z=
 "EasyMotion rebinding
 map <Leader>e <Plug>(easymotion-prefix)
@@ -91,23 +96,24 @@ nnoremap ; :
 nnoremap : ;
 nnoremap <silent> Q @q
 nnoremap <silent> <CR> :<C-U>wa<CR>:<C-U>!!<CR>
+autocmd CmdwinEnter * nnoremap <buffer> <CR> <CR>
+autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
 nnoremap <silent> <BS> :close<CR>
-nnoremap <C-s> :echo "ahhh"<CR>
 nnoremap gV `]v`[
 if has('nvim')
     autocmd BufWinEnter,WinEnter term://* startinsert
     tnoremap <Esc> <C-\><C-n>
     tnoremap <S-Tab> <C-\><C-n><C-w><C-k>
 endif
-function! s:goog(pat, lucky)
-  let q = '"'.substitute(a:pat, '["\n]', ' ', 'g').'"'
-  let q = substitute(q, '[[:punct:] ]',
-       \ '\=printf("%%%02X", char2nr(submatch(0)))', 'g')
-  call system(printf('open "https://www.google.com/search?%sq=%s"',
-                   \ a:lucky ? 'btnI&' : '', q))
-endfunction
-nnoremap <leader>? :call <SID>goog(expand("<cWORD>"), 0)<cr>
-nnoremap <leader>! :call <SID>goog(expand("<cWORD>"), 1)<cr>
+" function! s:goog(pat, lucky)
+"   let q = '"'.substitute(a:pat, '["\n]', ' ', 'g').'"'
+"   let q = substitute(q, '[[:punct:] ]',
+"        \ '\=printf("%%%02X", char2nr(submatch(0)))', 'g')
+"   call system(printf('open "https://www.google.com/search?%sq=%s"',
+"                    \ a:lucky ? 'btnI&' : '', q))
+" endfunction
+" nnoremap <leader>? :call <SID>goog(expand("<cWORD>"), 0)<cr>
+" nnoremap <leader>! :call <SID>goog(expand("<cWORD>"), 1)<cr>
 
 " ======================================================================
 " }}}
@@ -145,6 +151,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'chriskempson/base16-vim'
 Plug 'mattn/gist-vim'
 Plug 'mattn/webapi-vim'
 Plug 'kana/vim-textobj-user'
@@ -152,7 +159,9 @@ Plug 'kana/vim-textobj-line'
 Plug 'godlygeek/csapprox'
 Plug 'flazz/vim-colorschemes'
 Plug 'SirVer/ultisnips'
+Plug 'AndrewRadev/switch.vim'
 " Plug 'bling/vim-airline'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'unblevable/quick-scope'
 Plug 'kien/ctrlp.vim'
 Plug 'benekastah/neomake'
@@ -198,6 +207,7 @@ let g:limelight_conceal_ctermfg = 'gray'
 
 let g:surround_76 = "\\\1command: \1\{\r\}"
 let g:surround_101 = "\\emph\{\r\}"
+let g:surround_99 = "(\1function: \1 \r)"
 
 autocmd! BufWritePost * Neomake
 sign define neomake_err texthl=SignColumn

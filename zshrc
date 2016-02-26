@@ -9,6 +9,8 @@ export VISUAL="nvim"
 alias n="nvim"
 alias v="vim"
 
+alias jnl="sh ~/notes/journal/start-entry.sh"
+
 KEYTIMEOUT=1
 
 #[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
@@ -117,3 +119,5 @@ alias ding='afplay /System/Library/Sounds/Ping.aiff'
 
 
 # Base16 Shell
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
