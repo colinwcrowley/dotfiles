@@ -96,6 +96,12 @@ nnoremap ; :
 nnoremap : ;
 nnoremap <silent> Q @q
 nnoremap <silent> <CR> :<C-U>wa<CR>:<C-U>!!<CR>
+
+nnoremap d<CR> :Dispatch!<CR>
+nnoremap D<CR> :Dispatch<CR>
+autocmd FileType java let b:dispatch = 'javac %'
+autocmd FileType python let b:dispatch = 'python %'
+
 autocmd CmdwinEnter * nnoremap <buffer> <CR> <CR>
 autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
 nnoremap <silent> <BS> :close<CR>
@@ -170,6 +176,7 @@ Plug 'tommcdo/vim-exchange'
 Plug 'easymotion/vim-easymotion'
 Plug 'xuhdev/vim-latex-live-preview'
 Plug 'tpope/vim-dispatch'
+" Plug 'radenling/vim-dispatch-neovim'
 Plug 'tpope/vim-capslock'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-abolish'
