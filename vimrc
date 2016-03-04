@@ -33,6 +33,7 @@ autocmd InsertEnter,InsertLeave * set cul!
 " APPEARANCE {{{
 " ======================================================================
 
+set t_Co=256
 colorscheme base16-default
 let g:airline_left_sep=''
 let g:airline_right_sep=''
