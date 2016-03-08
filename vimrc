@@ -35,11 +35,11 @@ autocmd InsertEnter,InsertLeave * set cul!
 
 set t_Co=256
 colorscheme base16-default
-let g:airline_left_sep=''
-let g:airline_right_sep=''
-let g:airline_section_x = ''
-let g:airline_section_y = ''
-let g:airline_section_z = ''
+" let g:airline_left_sep=''
+" let g:airline_right_sep=''
+" let g:airline_section_x = ''
+" let g:airline_section_y = ''
+" let g:airline_section_z = ''
 
 " ======================================================================
 " }}}
@@ -76,6 +76,7 @@ nnoremap <C-y> <C-y><C-y>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>p a<Space><Esc>p
 nnoremap <leader>v :vsp ~/dotfiles/vimrc<CR>
+nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <Tab> <C-w>w
 nnoremap <F7> ggg?G``
 
@@ -97,6 +98,7 @@ nnoremap ; :
 nnoremap : ;
 nnoremap <silent> Q @q
 nnoremap <silent> <CR> :<C-U>wa<CR>:<C-U>!!<CR>
+nnoremap <leader><CR> i<CR><Esc>l
 
 nnoremap d<CR> :Dispatch!<CR>
 nnoremap D<CR> :Dispatch<CR>
