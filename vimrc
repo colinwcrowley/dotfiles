@@ -1,11 +1,13 @@
 " ======================================================================
 " BASICS {{{
 " ======================================================================
+"
+" llllll
 
-set expandtab smarttab autoindent
+set nocompatible
 set noswapfile
 set syntax=on
-set noshowmode
+set scrolloff=1
 set number
 set mouse=a
 set background=dark
@@ -22,7 +24,11 @@ set clipboard=unnamed
 set undolevels=10000
 set history=10000
 set incsearch
-set statusline=\ %F\ %=\ %{exists('g:loaded_fugitive')?fugitive#statusline():''}
+" set statusline=\ %F\ %=\ %{exists('g:loaded_fugitive')?fugitive#statusline():''}
+autocmd VimEnter *
+    \ let &statusline='%{bufferline#refresh_status()}'
+      \ .bufferline#get_status_string()
+
 let NERDTreeHijackNetrw=0
 autocmd InsertEnter,InsertLeave * set cul!
 
@@ -35,6 +41,10 @@ autocmd InsertEnter,InsertLeave * set cul!
 
 set t_Co=256
 colorscheme base16-default
+let g:bufferline_echo = 0
+let g:bufferline_active_buffer_left = ''
+let g:bufferline_active_buffer_right = ''
+let g:bufferline_show_bufnr = 0
 " let g:airline_left_sep=''
 " let g:airline_right_sep=''
 " let g:airline_section_x = ''
@@ -59,7 +69,6 @@ vnoremap > >gv
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 let mapleader = " "
-nnoremap <leader>s :sh<CR>
 nnoremap <silent> <leader>mm :make<CR>
 nnoremap <silent> <leader>lc :! texcount '%'<CR>
 nnoremap <silent> <leader>gs :Gstatus<CR>
@@ -73,10 +82,13 @@ nnoremap <silent> <leader>gA :Git add -A<CR>
 nnoremap <leader>gp :Git push<CR>
 nnoremap <C-e> <C-e><C-e>
 nnoremap <C-y> <C-y><C-y>
+nnoremap <leader>s :sh<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>p a<Space><Esc>p
 nnoremap <leader>v :vsp ~/dotfiles/vimrc<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <leader>i i<Space><Esc>
+nnoremap <leader>a a<Space><Esc>
 nnoremap <Tab> <C-w>w
 nnoremap <F7> ggg?G``
 
@@ -96,9 +108,10 @@ nnoremap <silent> <C-l> :noh<CR>
 nnoremap Y y$
 nnoremap ; :
 nnoremap : ;
+nnoremap <C-n> n.
 nnoremap <silent> Q @q
 nnoremap <silent> <CR> :<C-U>wa<CR>:<C-U>!!<CR>
-nnoremap <leader><CR> i<CR><Esc>l
+nnoremap <leader><CR> i<CR><Esc>
 
 nnoremap d<CR> :Dispatch!<CR>
 nnoremap D<CR> :Dispatch<CR>
@@ -160,6 +173,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/rainbow_parentheses.vim'
 Plug 'junegunn/limelight.vim'
+Plug 'bling/vim-bufferline'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'chriskempson/base16-vim'
 Plug 'mattn/gist-vim'
