@@ -112,11 +112,13 @@ nnoremap <C-n> n.
 nnoremap <silent> Q @q
 nnoremap <silent> <CR> :<C-U>wa<CR>:<C-U>!!<CR>
 nnoremap <leader><CR> i<CR><Esc>
+nnoremap t<CR> :Start<CR>
+nnoremap m<CR> :wa<CR> :Make<CR>
+nnoremap y<CR> :wa<CR> :!python %<CR>
 
 nnoremap d<CR> :Dispatch!<CR>
-nnoremap D<CR> :Dispatch<CR>
 autocmd FileType java let b:dispatch = 'javac %'
-autocmd FileType python let b:dispatch = 'python %'
+" autocmd FileType python let b:dispatch = 'python %'
 
 autocmd CmdwinEnter * nnoremap <buffer> <CR> <CR>
 autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
