@@ -85,7 +85,8 @@ nnoremap <C-y> <C-y><C-y>
 nnoremap <leader>s :sh<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>p a<Space><Esc>p
-nnoremap <leader>v :vsp ~/dotfiles/vimrc<CR>
+" nnoremap <leader>v :vsp ~/dotfiles/vimrc<CR>
+nnoremap <leader>v :echo "Don't you dare!!"<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>i i<Space><Esc>
 nnoremap <leader>a a<Space><Esc>
@@ -185,7 +186,7 @@ Plug 'flazz/vim-colorschemes'
 Plug 'SirVer/ultisnips'
 Plug 'AndrewRadev/switch.vim'
 " Plug 'bling/vim-airline'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'}
 Plug 'unblevable/quick-scope'
 Plug 'kien/ctrlp.vim'
 Plug 'benekastah/neomake'
@@ -234,7 +235,7 @@ let g:surround_76 = "\\\1command: \1\{\r\}"
 let g:surround_101 = "\\emph\{\r\}"
 let g:surround_99 = "(\1function: \1 \r)"
 
-autocmd! BufWritePost * Neomake
+" autocmd! BufWritePost * Neomake
 sign define neomake_err texthl=SignColumn
 sign define neomake_warn texthl=SignColumn
 sign define neomake_info texthl=SignColumn
