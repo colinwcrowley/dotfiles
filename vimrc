@@ -2,7 +2,6 @@
 " BASICS {{{
 " ======================================================================
 "
-" llllll
 
 set nocompatible
 set noswapfile
@@ -25,9 +24,9 @@ set undolevels=10000
 set history=10000
 set incsearch
 " set statusline=\ %F\ %=\ %{exists('g:loaded_fugitive')?fugitive#statusline():''}
-autocmd VimEnter *
-    \ let &statusline='%{bufferline#refresh_status()}'
-      \ .bufferline#get_status_string()
+" autocmd VimEnter *
+"     \ let &statusline='%{bufferline#refresh_status()}'
+"       \ .bufferline#get_status_string()
 
 let NERDTreeHijackNetrw=0
 autocmd InsertEnter,InsertLeave * set cul!
@@ -79,7 +78,8 @@ nnoremap <leader>go :Git checkout<Space>
 nnoremap <leader>ga :Git add<Space>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <silent> <leader>gA :Git add -A<CR>
-nnoremap <leader>gp :Git push<CR>
+nnoremap <leader>gk :Gpush<CR>
+nnoremap <leader>gj :Gpull<CR>
 nnoremap <C-e> <C-e><C-e>
 nnoremap <C-y> <C-y><C-y>
 nnoremap <leader>s :sh<CR>
@@ -109,15 +109,17 @@ nnoremap <silent> <C-l> :noh<CR>
 nnoremap Y y$
 nnoremap ; :
 nnoremap : ;
-nnoremap <C-n> n.
+" nnoremap <C-n> n.
 nnoremap <silent> Q @q
 nnoremap <silent> <CR> :<C-U>wa<CR>:<C-U>!!<CR>
 nnoremap <leader><CR> i<CR><Esc>
+nnoremap t<CR> :Start<CR>
+nnoremap m<CR> :wa<CR> :Make<CR>
+nnoremap y<CR> :wa<CR> :!python %<CR>
 
 nnoremap d<CR> :Dispatch!<CR>
-nnoremap D<CR> :Dispatch<CR>
 autocmd FileType java let b:dispatch = 'javac %'
-autocmd FileType python let b:dispatch = 'python %'
+" autocmd FileType python let b:dispatch = 'python %'
 
 autocmd CmdwinEnter * nnoremap <buffer> <CR> <CR>
 autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
@@ -206,6 +208,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-sleuth'
 Plug 'bronson/vim-visual-star-search'
 Plug 'panozzaj/vim-autocorrect'
 Plug 'rking/ag.vim'
