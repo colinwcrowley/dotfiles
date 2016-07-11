@@ -15,10 +15,10 @@ set shiftwidth=4
 set expandtab smarttab autoindent
 set backspace=eol,indent,start
 set laststatus=2
-set wrap nolist linebreak
+" set wrap nolist linebreak
 set formatprg=par\ -w72
 set formatoptions+=w
-set tw=72
+" set tw=72
 set clipboard=unnamed
 set undolevels=10000
 set history=10000
@@ -105,12 +105,12 @@ nnoremap <F7> ggg?G``
 nnoremap <S-Tab> 1z=
 "EasyMotion rebinding
 map <Leader>e <Plug>(easymotion-prefix)
-nnoremap <silent> <C-l> :noh<CR>
 nnoremap Y y$
 nnoremap ; :
 nnoremap : ;
 " nnoremap <C-n> n.
 nnoremap <silent> Q @q
+nnoremap q<CR> :qa<CR>
 nnoremap <silent> <CR> :<C-U>wa<CR>:<C-U>!!<CR>
 nnoremap <leader><CR> i<CR><Esc>
 nnoremap t<CR> :Start<CR>
@@ -147,19 +147,19 @@ endif
 " WHITESPACE {{{
 " ======================================================================
 
-fun! <SID>StripTrailingWhitespaces()
-    let l = line(".")
-    let c = col(".")
-    %s/\s\+$//e
-    call cursor(l, c)
-endfun
-autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
-fun! <SID>TrimEndLines()
-    let save_cursor = getpos(".")
-    :silent! %s#\($\n\s*\)\+\%$##
-    call setpos('.', save_cursor)
-endfun
-autocmd BufWritePre * :call <SID>TrimEndLines()
+" fun! <SID>StripTrailingWhitespaces()
+"     let l = line(".")
+"     let c = col(".")
+"     %s/\s\+$//e
+"     call cursor(l, c)
+" endfun
+" autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+" fun! <SID>TrimEndLines()
+"     let save_cursor = getpos(".")
+"     :silent! %s#\($\n\s*\)\+\%$##
+"     call setpos('.', save_cursor)
+" endfun
+" autocmd BufWritePre * :call <SID>TrimEndLines()
 autocmd! bufwritepost .vimrc source %
 autocmd! bufwritepost ~/dotfiles/vimrc source %
 
@@ -216,6 +216,7 @@ Plug 'bps/vim-textobj-python', { 'for': 'python'}
 Plug 'rbonvall/vim-textobj-latex', { 'for': 'tex'}
 Plug 'tpope/vim-fireplace', {'for': 'clojure'}
 Plug 'suan/vim-instant-markdown', { 'for': 'markdown'}
+Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 function! s:map_change_option(...)
