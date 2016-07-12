@@ -116,7 +116,8 @@ nnoremap t<CR> :Start<CR>
 nnoremap m<CR> :wa<CR> :Make<CR>
 nnoremap y<CR> :wa<CR> :!python %<CR>
 
-nnoremap d<CR> :Dispatch!<CR>
+nnoremap d<CR> :Dispatch<CR>
+autocmd FileType javascript let b:dispatch = 'nodeunit'
 autocmd FileType java let b:dispatch = 'javac %'
 " autocmd FileType python let b:dispatch = 'python %'
 
