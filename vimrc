@@ -89,9 +89,13 @@ nnoremap <leader>v :vsp ~/dotfiles/vimrc<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>i i<Space><Esc>
 nnoremap <leader>a a<Space><Esc>
+nnoremap <leader>; A;<Esc>
+nnoremap <leader>q :cclose<CR>
+nnoremap <C-p> :<C-p>
 nnoremap <Tab> <C-w>w
 nnoremap <F7> ggg?G``
-
+nnoremap s :!
+cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
 " nnoremap <C-c>j <c-w>j<c-w>c<c-w>k
 " nnoremap <C-c>k <c-w>k<c-w>c<c-w>j
 " nnoremap <C-c>l <c-w>l<c-w>c<c-w>h
@@ -103,15 +107,14 @@ nnoremap <F7> ggg?G``
 "true
 nnoremap <S-Tab> 1z=
 "EasyMotion rebinding
-map <Leader>e <Plug>(easymotion-prefix)
+map , <Plug>(easymotion-prefix)
 nnoremap Y y$
 nnoremap ; :
 nnoremap : ;
 " nnoremap <C-n> n.
 nnoremap <silent> Q @q
-nnoremap q<CR> :qa<CR>
 nnoremap <silent> <CR> :<C-U>wa<CR>:<C-U>!!<CR>
-nnoremap <leader><CR> i<CR><Esc>
+nnoremap <leader><CR> q:?
 nnoremap t<CR> :Start<CR>
 nnoremap m<CR> :wa<CR> :Make<CR>
 nnoremap y<CR> :wa<CR> :!python %<CR>
@@ -209,6 +212,7 @@ Plug 'tpope/vim-vinegar'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-sleuth'
+Plug 'tpope/vim-endwise'
 Plug 'bronson/vim-visual-star-search'
 Plug 'panozzaj/vim-autocorrect'
 Plug 'rking/ag.vim'
@@ -217,7 +221,10 @@ Plug 'rbonvall/vim-textobj-latex', { 'for': 'tex'}
 Plug 'tpope/vim-fireplace', {'for': 'clojure'}
 Plug 'suan/vim-instant-markdown', { 'for': 'markdown'}
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'tmhedberg/matchit'
 call plug#end()
+
+let g:ctrlp_map = '<leader>f'
 
 function! s:map_change_option(...)
   let [key, opt] = a:000[0:1]
