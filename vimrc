@@ -5,6 +5,7 @@
 
 set nocompatible
 set noswapfile
+set cul
 set syntax=on
 set scrolloff=1
 set number
@@ -15,10 +16,11 @@ set shiftwidth=4
 set expandtab smarttab autoindent
 set backspace=eol,indent,start
 set laststatus=2
-" set wrap nolist linebreak
+set wrap nolist linebreak
+set relativenumber
 set formatprg=par\ -w72
 set formatoptions+=w
-" set tw=72
+set tw=72
 set clipboard=unnamed
 set undolevels=10000
 set history=10000
@@ -63,6 +65,15 @@ inoremap <C-h> <Left>
 inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
+inoremap fd $
+inoremap ,. , \ldots, 
+inoremap ,a \alpha
+inoremap ,b \beta
+inoremap ,g \gamma
+inoremap ,d \delta
+inoremap ,w \omega
+inoremap ,e \epsilon
+
 vnoremap < <gv
 vnoremap > >gv
 xmap ga <Plug>(EasyAlign)
@@ -85,17 +96,18 @@ nnoremap <C-y> <C-y><C-y>
 nnoremap <leader>s :sh<CR>
 nnoremap <leader>w :w<CR>
 nnoremap <leader>p a<Space><Esc>p
-" nnoremap <leader>v :vsp ~/dotfiles/vimrc<CR>
-nnoremap <leader>v :echo "Don't you dare!!"<CR>
+nnoremap <leader>v :vsp ~/dotfiles/vimrc<CR>
+" nnoremap <leader>v :echo "Don't you dare!!"<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>i i<Space><Esc>
 nnoremap <leader>a a<Space><Esc>
 nnoremap <leader>; A;<Esc>
 nnoremap <leader>q :cclose<CR>
 nnoremap <C-p> :<C-p>
-nnoremap <Tab> <C-w>w
+" nnoremap <Tab> <C-w>w
 nnoremap <F7> ggg?G``
-nnoremap s :!
+nnoremap cm i\V{<Esc>la}<Esc>h
+" nnoremap s :!
 cnoremap %% <C-R>=fnameescape(expand('%:h')).'/'<cr>
 " nnoremap <C-c>j <c-w>j<c-w>c<c-w>k
 " nnoremap <C-c>k <c-w>k<c-w>c<c-w>j
@@ -164,7 +176,7 @@ endif
 "     call setpos('.', save_cursor)
 " endfun
 " autocmd BufWritePre * :call <SID>TrimEndLines()
-autocmd! bufwritepost .vimrc source %
+autocmd! bufwritepost .vimrc source % | source %
 autocmd! bufwritepost ~/dotfiles/vimrc source %
 
 " ======================================================================
@@ -204,6 +216,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-capslock'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-abolish'
+Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-repeat'
@@ -243,9 +256,11 @@ nnoremap cop :RainbowParentheses!!<CR>
 let g:instant_markdown_autostart = 0
 let g:limelight_conceal_ctermfg = 'gray'
 
+let g:surround_{char2nr('c')} = "\\\1command\1{\r}"
+
 let g:surround_76 = "\\\1command: \1\{\r\}"
 let g:surround_101 = "\\emph\{\r\}"
-let g:surround_99 = "(\1function: \1 \r)"
+" let g:surround_99 = "(\1function: \1 \r)"
 
 " autocmd! BufWritePost * Neomake
 sign define neomake_err texthl=SignColumn

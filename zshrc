@@ -109,7 +109,6 @@ source $ZSH/oh-my-zsh.sh
 
 
 setopt CORRECT
-export TERM=xterm-256color
 alias ding='afplay /System/Library/Sounds/Ping.aiff'
 
 
