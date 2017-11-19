@@ -2,6 +2,8 @@
 " BASICS {{{
 " ======================================================================
 "
+"
+" (other stuff)(replace this placeholder)
 
 set nocompatible
 set noswapfile
