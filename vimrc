@@ -68,13 +68,59 @@ inoremap <C-j> <Down>
 inoremap <C-k> <Up>
 inoremap <C-l> <Right>
 inoremap fd $
+inoremap df \
+inoremap jk {
+inoremap kj }
 inoremap ,. , \ldots, 
-inoremap ,a \alpha
-inoremap ,b \beta
-inoremap ,g \gamma
-inoremap ,d \delta
-inoremap ,w \omega
-inoremap ,e \epsilon
+
+"greek for latex
+inoremap fja \alpha
+inoremap fjb \beta
+inoremap fjg \gamma
+inoremap fjd \delta
+inoremap fje \epsilon
+inoremap fjz \zeta
+inoremap fji \iota
+inoremap fjk \kappa
+inoremap fjl \lambda
+inoremap fjm \mu
+inoremap fjn \nu
+inoremap fjx \xi
+inoremap fjo \theta
+inoremap fjp \pi
+inoremap fjr \rho
+inoremap fjs \sigma
+inoremap fjt \tau
+inoremap fju \upsilon
+inoremap fjf \phi
+inoremap fjc \chi
+inoremap fjy \psi
+inoremap fjw \omega
+
+"greek for latex
+inoremap cja \Alpha
+inoremap cjb \Beta
+inoremap cjg \Gamma
+inoremap cjd \Delta
+inoremap cje \Epsilon
+inoremap cjz \Zeta
+inoremap cji \Iota
+inoremap cjk \Kappa
+inoremap cjl \Lambda
+inoremap cjm \Mu
+inoremap cjn \Nu
+inoremap cjx \Xi
+inoremap cjo \Theta
+inoremap cjp \Pi
+inoremap cjr \Rho
+inoremap cjs \Sigma
+inoremap cjt \Tau
+inoremap cju \Upsilon
+inoremap cjf \Phi
+inoremap cjc \Chi
+inoremap cjy \Psi
+inoremap cjw \Omega
+
 
 vnoremap < <gv
 vnoremap > >gv
