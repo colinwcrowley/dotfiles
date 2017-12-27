@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/Colin/.oh-my-zsh
 
-alias math='/Applications/Mathematica.app/Contents/MacOS/MathKernel'
+# alias math='/Applications/Mathematica.app/Contents/MacOS/MathKernel'
 
 export EDITOR="nvim"
 export VISUAL="nvim"
@@ -79,7 +79,7 @@ export PATH="/Library/TeX/texbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 #[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 #ZSH_TMUX_AUTOSTART=true
 #ZSH_TMUX_AUTOCONNECT=true
-source $ZSH/oh-my-zsh.sh
+# source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -109,7 +109,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 setopt CORRECT
-alias ding='afplay /System/Library/Sounds/Ping.aiff'
+# alias ding='afplay /System/Library/Sounds/Ping.aiff'
 
 
 #. /Users/Colin/torch/install/bin/torch-activate
@@ -120,3 +120,12 @@ alias ding='afplay /System/Library/Sounds/Ping.aiff'
 # Base16 Shell
 
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+#
+#
+#
+# Start xinit
+if [ -z "$DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
+  exec startx
+fi
+#display info
+screenfetch
