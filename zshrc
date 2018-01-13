@@ -3,10 +3,9 @@ export ZSH=/Users/Colin/.oh-my-zsh
 
 # alias math='/Applications/Mathematica.app/Contents/MacOS/MathKernel'
 
-export EDITOR="nvim"
-export VISUAL="nvim"
+export EDITOR="vim"
+export VISUAL="vim"
 
-alias n="nvim"
 alias v="vim"
 
 alias jnl="sh ~/notes/journal/start-entry.sh"

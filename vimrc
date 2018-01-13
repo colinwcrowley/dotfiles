@@ -251,7 +251,7 @@ Plug 'godlygeek/csapprox'
 Plug 'flazz/vim-colorschemes'
 Plug 'SirVer/ultisnips'
 Plug 'AndrewRadev/switch.vim'
-" Plug 'bling/vim-airline'
+Plug 'bling/vim-airline'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'}
 Plug 'unblevable/quick-scope'
 Plug 'kien/ctrlp.vim'
