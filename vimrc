@@ -127,6 +127,7 @@ vnoremap > >gv
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 let mapleader = " "
+nnoremap <silent> <leader>op :!xdg-open *.pdf &<CR>
 nnoremap <silent> <leader>mm :make<CR>
 nnoremap <silent> <leader>lc :! texcount '%'<CR>
 nnoremap <silent> <leader>gs :Gstatus<CR>
@@ -251,7 +252,7 @@ Plug 'godlygeek/csapprox'
 Plug 'flazz/vim-colorschemes'
 Plug 'SirVer/ultisnips'
 Plug 'AndrewRadev/switch.vim'
-Plug 'bling/vim-airline'
+" Plug 'bling/vim-airline'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'}
 Plug 'unblevable/quick-scope'
 Plug 'kien/ctrlp.vim'
