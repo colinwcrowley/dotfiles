@@ -181,6 +181,8 @@ nnoremap t<CR> :Start<CR>
 nnoremap m<CR> :wa<CR> :Make<CR>
 nnoremap y<CR> :wa<CR> :!python %<CR>
 
+
+
 nnoremap d<CR> :Dispatch<CR>
 autocmd FileType javascript let b:dispatch = 'nodeunit'
 autocmd FileType java let b:dispatch = 'javac %'
@@ -237,6 +239,7 @@ autocmd! bufwritepost ~/dotfiles/vimrc source %
 
 call plug#begin('~/dotfiles/vim/plug')
 Plug 'junegunn/vim-plug'
+Plug 'jeanCarloMachado/vim-toop'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/rainbow_parentheses.vim'
@@ -250,7 +253,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-line'
 Plug 'godlygeek/csapprox'
 Plug 'flazz/vim-colorschemes'
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'AndrewRadev/switch.vim'
 " Plug 'bling/vim-airline'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'}
@@ -285,7 +288,9 @@ Plug 'tpope/vim-fireplace', {'for': 'clojure'}
 Plug 'suan/vim-instant-markdown', { 'for': 'markdown'}
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tmhedberg/matchit'
+Plug 'coreysharris/Macaulay2.vim'
 call plug#end()
+
 
 let g:ctrlp_map = '<leader>f'
 
@@ -319,6 +324,14 @@ sign define neomake_msg texthl=SignColumn
 let g:neomake_verbose=0
 
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+" Macualay 2 functionality
+function! SendToM2(string)
+    :call term_sendkeys("!M2", a:string)
+endfunction
+call toop#mapFunction('SendToM2', "m,")
+nnoremap m<CR> :term M2<CR> <C-w>L<C-w>h
+
 
 " ======================================================================
 " }}}
