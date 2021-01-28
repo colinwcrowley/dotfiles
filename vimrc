@@ -53,6 +53,8 @@ let g:bufferline_show_bufnr = 0
 " let g:airline_section_x = ''
 " let g:airline_section_y = ''
 " let g:airline_section_z = ''
+"
+
 
 " ======================================================================
 " }}}
@@ -331,6 +333,7 @@ function! SendToM2(string)
 endfunction
 call toop#mapFunction('SendToM2', "m,")
 nnoremap m<CR> :term M2<CR> <C-w>L<C-w>h
+
 
 
 " ======================================================================
