@@ -1,0 +1,1 @@
+("~/repos/vimb/" "~/repos/todo/" "~/repos/sherlock/" "~/repos/newton/" "~/repos/ms-teams-replace-background/" "~/repos/linearspace/" "~/repos/equivariant/" "~/repos/calculus-i-worksheets-f19/" "~/dotfiles/" "~/Downloads/")
